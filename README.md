@@ -1,5 +1,7 @@
 # BioPM
 
+[![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 Reference implementation, pretrained checkpoints, preprocessing pipeline
 and downstream-classification protocol for **BioPM**, a movement-element
 transformer for wearable 3-axis accelerometer data (ICML 2026).

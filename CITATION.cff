@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use BioPM in your research, please cite the ICML 2026 paper."
+title: "BioPM: Biological Primitives Model for wearable accelerometer data"
+type: software
+version: "0.1.0"
+date-released: "2026-05-25"
+url: "https://github.com/Prithvitarale/biopm"
+license: MIT
+authors:
+  - family-names: Tarale
+    given-names: Prithviraj
+preferred-citation:
+  type: conference-paper
+  title: "BioPM: Biological Primitives Model for Wearable Accelerometer Data"
+  year: 2026
+  conference:
+    name: "International Conference on Machine Learning (ICML)"
+  authors:
+    - family-names: Tarale
+      given-names: Prithviraj
