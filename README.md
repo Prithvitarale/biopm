@@ -6,7 +6,7 @@ Reference implementation, pretrained checkpoints, preprocessing pipeline
 and downstream-classification protocol for **BioPM**, a movement-element
 transformer for wearable 3-axis accelerometer data (ICML 2026).
 
-> **Paper:** *coming soon*  &nbsp;·&nbsp;  **[Project page link](https://prithvitarale.github.io/biopm-site/)**
+> **Paper:** *coming soon*  &nbsp;·&nbsp;  **[Project page](https://prithvitarale.github.io/biopm-site/)**
 
 The release is intentionally minimal: just the BioPM model, the
 mHealth-style preprocessing it was trained for, a one-call feature
