@@ -351,6 +351,13 @@ class BioPM(nn.Module):
                     sd = sd[k]
                     break
         sd = {k.replace("module.", ""): v for k, v in sd.items()}
+        # Continue-finetune / full-model dumps nest encoder weights under
+        # ``encoder_acc.*``; strip so they match ``encoder_acc.state_dict()``.
+        if any(k.startswith("encoder_acc.") for k in sd):
+            sd = {
+                (k[len("encoder_acc."):] if k.startswith("encoder_acc.") else k): v
+                for k, v in sd.items()
+            }
         # Strip pretraining-only heads that are not in this encoder
         encoder_keys = set(self.encoder_acc.state_dict().keys())
         filtered = {k: v for k, v in sd.items() if k in encoder_keys}
